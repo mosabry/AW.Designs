@@ -1,0 +1,57 @@
+/*------------------------------
+        Header Style
+------------------------------*/
+
+header {
+    width: 100%;
+    background-color: $dark-blue;
+    color: $light-blue;
+
+    .heading-div {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+
+        @media all and (max-width: 480px) {
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 35px;
+            letter-spacing: 2px;
+
+            @media all and (max-width: 991px) {
+                font-size: 25px;
+            }
+        }
+
+        .nav-menu {
+            a {
+                color: $light-blue;
+                padding: 31px 30px;
+                font-size: 21px;
+                transition: background-color .3s ease-in-out;
+                font-family: serif;
+
+                &:hover {
+                    background-color: $Sizzling-Red;
+                }
+
+                @media all and (max-width: 991px) {
+                    font-size: 16px;
+                }
+
+                @media all and (max-width: 480px) {
+                    padding: 21px 10px;
+                }
+            }
+
+            @media all and (max-width: 480px) {
+                margin-top: 25px;
+            }
+        }
+    }
+}

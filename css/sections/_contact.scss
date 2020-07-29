@@ -1,0 +1,67 @@
+/*------------------------------
+        Contact Style
+------------------------------*/
+
+.contact {
+    background-color: $Sizzling-Red;
+    width: 100%;
+    text-align: center;
+    color: $light-blue;
+    padding: 80px 0;
+
+    h2 {
+        padding-top: 50px;
+        padding-bottom: 35px;
+        text-transform: uppercase;
+        font-size: 45px;
+        word-spacing: 4px;
+        letter-spacing: 2px;
+
+        @media all and (max-width: 991px) {
+            font-size: 30px;
+        }
+    }
+
+    form {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    input, textarea {
+        width: 100%;
+        margin: 15px auto;
+        padding: 9px;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: $light-blue;
+
+        &:focus {
+            background-color: $dark-blue;
+            color: $light-blue;
+        }
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .button {
+        border-radius: 10px;
+        border: 2px solid $light-blue;
+        font-size: 20px;
+        background-color: transparent;
+        color: $light-blue;
+        cursor: pointer;
+        transition: all .3s ease;
+
+        &:hover {
+            background-color: $light-blue;
+            color: $Sizzling-Red;
+            transform: scale(0.95);
+        }
+
+        @media all and (max-width: 991px) {
+            font-size: 16px;
+        }
+    }
+}

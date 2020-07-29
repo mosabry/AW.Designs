@@ -1,0 +1,46 @@
+/*------------------------------
+        Footer Style
+------------------------------*/
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: $dark-blue;
+    color: $light-blue;
+
+    p {
+        @media all and (max-width: 991px) {
+            font-size: 14px;
+        }
+    }
+
+    a {
+        color: $Sizzling-Red;
+        transition: all 0.3 ease-out;
+
+        &:hover {
+            color: $light-blue;
+        }
+    }
+
+    .left {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: $Sizzling-Red;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:hover:before {
+            visibility: visible;
+            width: 100%;
+        }
+    }
+}

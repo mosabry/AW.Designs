@@ -1,0 +1,15 @@
+@import "./helpers/variables";
+@import "./basic";
+
+@import "./layouts/header";
+
+@import "./sections/heading";
+@import "./sections/personal_info";
+@import "./sections/abilities";
+@import "./sections/works";
+@import "./sections/contact";
+
+@import "./layouts/footer";
+
+
+@import "./media-query";

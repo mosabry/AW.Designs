@@ -1,0 +1,58 @@
+/*=============================
+
+        Default Values
+
+Font: Roboto (paragrphs), Calistoga (headings), serif (nav links)
+
+Colors:
+1. Sizzling Red: #f53b57;
+2. Really dark Blue: #181e2c;
+3. Really light Blue: #e5ebf8;
+
+==============================*/
+
+/*------------------------------
+        Basic setup
+------------------------------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: $dark-blue;
+    font-family: "Reef", sans-serif;
+    text-rendering: optimizeLegibility;
+
+    p {
+        font-family: "Roboto", sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: "Calistoga", cursive;
+    }
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #fff;
+
+    @media all and (max-width: 991px) {
+        max-width: 600px;
+    }
+}

@@ -1,0 +1,47 @@
+/*------------------------------
+        Works Style
+------------------------------*/
+
+.works {
+    background-color: $dark-blue;
+    width: 100%;
+    text-align: center;
+    color: $light-blue;
+    padding: 80px 0;
+
+    h2 {
+        padding-bottom: 50px;
+        font-size: 40px;
+        word-spacing: 4px;
+        letter-spacing: 2px;
+
+        @media all and (max-width: 991px) {
+            font-size: 30px;
+        }
+    }
+
+    .works-gallery {
+        display: flex;
+        flex-flow: wrap;
+        max-width: 1400px;
+        margin: 0 auto;
+        justify-content: space-between;
+
+        @media all and (max-width: 991px) {
+            justify-content: space-around;
+        }
+
+        img {
+            width: 32%;
+            margin: 1% 0;
+
+            @media all and (max-width: 991px) {
+                width: 48%;
+            }
+
+            @media all and (max-width: 480px) {
+                width: 98%;
+            }
+        }
+    }
+}

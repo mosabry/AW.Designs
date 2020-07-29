@@ -1,0 +1,49 @@
+/*------------------------------
+        Abilities Style
+------------------------------*/
+
+.abilities {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: 120px auto;
+
+    @media all and (max-width: 991px) {
+        flex-direction: column;
+    }
+
+    .ability {
+        margin-right: 45px;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        i {
+            color: $Sizzling-Red;
+            font-size: 80px;
+
+            @media all and (max-width: 991px) {
+                font-size: 50px;
+                margin-top: 40px;
+            }
+        }
+
+        h3 {
+            margin-top: 20px;
+            font-size: 27px;
+        }
+
+        p {
+            margin-top: 40px;
+
+            @media all and (max-width: 991px) {
+                margin-top: 15px;
+            }
+        }
+
+        @media all and (max-width: 991px) {
+            margin-right: 0;
+        }
+    }
+}
